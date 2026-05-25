@@ -1,32 +1,109 @@
-# 4.Execution_of_NetworkCommands
-## AIM :Use of Network commands in Real Time environment
-## Software : Command Prompt And Network Protocol Analyzer
-## Procedure: To do this EXPERIMENT- follows these steps:
-<BR>
-In this EXPERIMENT- students have to understand basic networking commands e.g cpdump, netstat, ifconfig, nslookup ,traceroute and also Capture ping and traceroute PDUs using a network protocol analyzer 
-<BR>
-All commands related to Network configuration which includes how to switch to privilege mode
-<BR>
-and normal mode and how to configure router interface and how to save this configuration to
-<BR>
-flash memory or permanent memory.
-<BR>
-This commands includes
-<BR>
-• Configuring the Router commands
-<BR>
-• General Commands to configure network
-<BR>
-• Privileged Mode commands of a router 
-<BR>
-• Router Processes & Statistics
-<BR>
-• IP Commands
-<BR>
-• Other IP Commands e.g. show ip route etc.
-<BR>
+# 4. Execution of Network Commands
 
-## Output
+## AIM
+Use of network commands in real-time environment.
 
-## Result
-Thus Execution of Network commands Performed 
+## SOFTWARE REQUIRED
+- Command Prompt
+- Network Protocol Analyzer
+- Python
+
+---
+
+## PROCEDURE
+
+This experiment demonstrates commonly used networking commands.
+
+Commands covered:
+
+- netstat
+- ipconfig
+- ping
+- tracert
+- nslookup
+- getmac
+- hostname
+- nbtstat
+- arp
+- systeminfo
+
+---
+
+## PROGRAM
+
+```python
+import os
+
+commands=[
+'ipconfig',
+'netstat',
+'ping google.com',
+'tracert google.com',
+'nslookup google.com',
+'getmac',
+'hostname',
+'nbtstat',
+'arp -a',
+'systeminfo'
+]
+
+for cmd in commands:
+ print('\n'+'='*50)
+ print('Executing:',cmd)
+ print('='*50)
+ os.system(cmd)
+```
+
+---
+
+## COMMAND DESCRIPTION
+
+| Command | Purpose |
+|---|---|
+| netstat | Shows active connections |
+| ipconfig | Displays IP configuration |
+| ping | Tests connectivity |
+| tracert | Displays route packets take |
+| nslookup | DNS lookup |
+| getmac | Shows MAC address |
+| hostname | Shows device name |
+| nbtstat | Displays NetBIOS statistics |
+| arp | Displays ARP table |
+| systeminfo | Shows system configuration |
+
+---
+
+## EXECUTION
+
+```bash
+python network_commands.py
+```
+
+---
+
+## SAMPLE OUTPUT
+
+Executing: ipconfig
+
+Executing: netstat
+
+Executing: ping google.com
+
+Executing: tracert google.com
+
+Executing: nslookup google.com
+
+Executing: getmac
+
+Executing: hostname
+
+Executing: nbtstat
+
+Executing: arp -a
+
+Executing: systeminfo
+
+---
+
+## RESULT
+Thus execution of network commands was performed successfully.
