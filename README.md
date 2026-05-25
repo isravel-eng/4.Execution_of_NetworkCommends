@@ -449,7 +449,6 @@ Virtualization-based security: Status: Running
 Hyper-V Requirements:          A hypervisor has been detected. Features required for Hyper-V will not be displayed.
 PS C:\CN\4.Execution_of_NetworkCommends> 
 ```
----
 
 ## RESULT
 Thus execution of network commands was performed successfully.
